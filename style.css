@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    position: fixed; /* Fix the navigation bar at the top */
+    width: 100%;
+    background: lemonchiffon;
+    z-index: 100; /* Ensure the navigation bar appears above other content */
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 5%;
+}
+
+.nav ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center; /* Center the list items horizontally */
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 20px; /* Add space between menu items */
+}
+
+.nav a {
+    font-family: 'georgia', serif; /* Replace 'Your-Desired-Font' with the desired font */
+    text-decoration: none;
+    padding: 1px 5px; /* Add padding to create a button-like appearance */
+    color: rgb(100, 168, 93); /* Text color for the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.nav a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: lemonchiffon; /* Change text color on hover */
+}
+
+.gif-div {
+    min-width: 100px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em 5%;
+}
+
+.home-section {
+    margin-top: 15vh;
+}
+
+.contact-section {
+    margin-top: 15vh;
+}
+
+.contact-section ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center; /* Center the list items horizontally */
+}
+
+.contact-section li {
+    display: inline-block;
+    margin: 0 20px; /* Add space between menu items */
+}
+
+.contact-section a {
+    font-family: 'georgia', serif; /* Replace 'Your-Desired-Font' with the desired font */
+    text-decoration: none;
+    padding: 1px 5px; /* Add padding to create a button-like appearance */
+    color: rgb(100, 168, 93); /* Text color for the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.contact-section a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: lemonchiffon; /* Change text color on hover */
+}
+
+.home-section > h4 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.photo-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 800px;
+    text-align: center; /* Center the content (images) within the container */
+}
+
+img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto;
+    display: block; /* Remove extra spacing around the image */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+
+/* Footer Styles */
+footer {
+    background: lemonchiffon;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Define the styles for the image and the negative effect class */
+.image {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s; /* Add a smooth transition for the filter property */
+}
+
+.negative {
+    filter: invert(100%); /* Apply the negative effect */
+}
